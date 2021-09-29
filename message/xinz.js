@@ -364,25 +364,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
             }
                 break
             case prefix+'help': case prefix+'menu':{
-           menu = `
-├≽ *${prefix}stickermenu*
-├≽ *${prefix}creatormenu*
-├≽ *${prefix}groupmenu*
-├≽ *${prefix}sistemmenu*
-├≽ *${prefix}gabutmenu*
-├≽ *${prefix}gamemenu*
-├≽ *${prefix}downloadmenu*
-├≽ *${prefix}searchmenu*
-├≽ *${prefix}stalkmenu*
-├≽ *${prefix}randommenu*
-├≽ *${prefix}animemenu*
-├≽ *${prefix}nsfwmenu*
-├≽ *${prefix}toolsmenu*
-├≽ *${prefix}makermenu*
-├≽ *${prefix}storagemenu*
-├≽ *${prefix}othermenu*`
-xinz.sendMessage(from, { contentText: `Tes`, footerText: '© By Rafasurya', buttons: [{ buttonId: `.owner`, buttonText: { displayText: 'Creator' }, type: 1 }], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage }}, 'buttonsMessage')
-}
+           }
                 break
             case prefix+'stickermenu': case prefix+'stikermenu': case prefix+'menusticker': case prefix+'menusticker':{
                 textImg(stickerMenu(prefix))
