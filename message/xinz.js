@@ -364,6 +364,9 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
             }
                 break
             case prefix+'help': case prefix+'menu':{
+let prep = await xinz.toMSG(fakeimage, 'imageMessage')
+let txt = `Tes dulu bray`
+					xinz.sendMessage(from, { contentText: txt, footerText: `By Rafasurya`, buttons: [{ buttonId: `${prefix}owner`, buttonText: { displayText: 'owner' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'Creator' }, type: 1 }], headerType: 'IMAGE', imageMessage: prep }, 'buttonsMessage', { quoted: msg, contextInfo: { mentionedJid: [sender], externalAdReply: { title: 'XczBot', body: 'contact me :3', thumbnail: fakeimage, sourceUrl: 'https://wa.me/6285861870154?text=Haii' }}})
            }
                 break
             case prefix+'stickermenu': case prefix+'stikermenu': case prefix+'menusticker': case prefix+'menusticker':{
