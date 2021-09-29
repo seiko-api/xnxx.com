@@ -5,7 +5,7 @@
 <a href="#"><img title="XCZ BOT" src="https://img.shields.io/badge/XCZ BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/zennn08"><img title="Author" src="https://img.shields.io/badge/Author-zennn08-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/zennn08"><img title="Author" src="https://img.shields.io/badge/Author-Rafasurya-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://github.com/zennn08/followers"><img title="Followers" src="https://img.shields.io/github/followers/zennn08?color=blue&style=flat-square"></a>
@@ -58,15 +58,15 @@ node main
 ```bash
 apt install nodejs git ffmpeg libwebp imagemagick
 git clone https://github.com/Xinz-Team/XinzBot.git
-cd XinzBot
+cd xnxx.com
 npm install
 node main
 ```
 
 ## Edit file
 - Change ownerNumber on [this section](https://github.com/Xinz-Team/XinzBot/blob/8d32fc24d9252517e995d19046fe06ca4b983055/config.json#L2)
-- Change ownerName on [this section](https://github.com/Xinz-Team/XinzBot/blob/8d32fc24d9252517e995d19046fe06ca4b983055/config.json#L3)
-- Change botName on [this section](https://github.com/Xinz-Team/XinzBot/blob/8d32fc24d9252517e995d19046fe06ca4b983055/config.json#L6)
+- Change ownerName on [this section](https://github.com/xcz404/XNXX.com/blob/8d32fc24d9252517e995d19046fe06ca4b983055/config.json#L3)
+- Change botName on [this section](https://github.com/xcz404/xnxx.com/blob/8d32fc24d9252517e995d19046fe06ca4b983055/config.json#L6)
 - Change Apikey on [this section](https://github.com/Xinz-Team/XinzBot/blob/8d32fc24d9252517e995d19046fe06ca4b983055/config.json#L8)
 - Change fakeReply on [this section](https://github.com/Xinz-Team/XinzBot/blob/8d32fc24d9252517e995d19046fe06ca4b983055/config.json#L9)
 - Change Donasi on [this section](https://github.com/Xinz-Team/XinzBot/blob/8d32fc24d9252517e995d19046fe06ca4b983055/config.json#L12)
