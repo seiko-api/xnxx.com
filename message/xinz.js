@@ -364,24 +364,25 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
             }
                 break
             case prefix+'help': case prefix+'menu':{
-                axios.get(`https://api-ramlan.herokuapp.com/api/ucapan?timeZone=Asia/Jakarta`)
-                .then(async(ucapan) => {
-                let sisalimit = getLimit(sender, limitCount, limit)
-                let sisaGlimit = cekGLimit(sender, gcount, glimit)
-                let cekvip = ms(_prem.getPremiumExpired(sender, premium) - Date.now())
-                let expiredPrem = () => {
-                    if (cekvip.days != 0){
-                        return `${cekvip.days} day(s)`
-                    } else if (cekvip.hours != 0){
-                        return `${cekvip.hours} hour(s)`
-                    } else if (cekvip.minutes != 0){
-                        return `${cekvip.minutes}`
-                    }
-                }
-                //let expiredPrem = `${cekvip.days} day(s) ${cekvip.hours} hour(s) ${cekvip.minutes} minute(s)`
-                fakeimage(newMenu(ucapan, setting.ownerName, setting.botName, prefix, pendaftar, runtime(process.uptime()), pushname, isOwner, isPremium, sisalimit, limitCount, sisaGlimit, gcount, expiredPrem(), tanggal, jam))
-            })
-            }
+           menu = `
+├≽ *${prefix}stickermenu*
+├≽ *${prefix}creatormenu*
+├≽ *${prefix}groupmenu*
+├≽ *${prefix}sistemmenu*
+├≽ *${prefix}gabutmenu*
+├≽ *${prefix}gamemenu*
+├≽ *${prefix}downloadmenu*
+├≽ *${prefix}searchmenu*
+├≽ *${prefix}stalkmenu*
+├≽ *${prefix}randommenu*
+├≽ *${prefix}animemenu*
+├≽ *${prefix}nsfwmenu*
+├≽ *${prefix}toolsmenu*
+├≽ *${prefix}makermenu*
+├≽ *${prefix}storagemenu*
+├≽ *${prefix}othermenu*`
+xinz.sendMessage(from, { contentText: `Tes`, footerText: '© By Rafasurya', buttons: [{ buttonId: `.owner`, buttonText: { displayText: 'Creator' }, type: 1 }], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage }}, 'buttonsMessage')
+}
                 break
             case prefix+'stickermenu': case prefix+'stikermenu': case prefix+'menusticker': case prefix+'menusticker':{
                 textImg(stickerMenu(prefix))
